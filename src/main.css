@@ -1,0 +1,24 @@
+:root {
+    --main-bg-color: #121725;
+    --main-accent-color: #54E6AF;
+    --body-copy: #C2CBE5;
+    --form-fill: #2C344B;
+    --accent-copy: #FFFFFF; /* everywhere, form label, pod logo text */
+    --footer-list:#5A668A;
+}
+
+body {
+    font-family: 'Chivo', sans-serif;
+    background-color: var(--main-bg-color);
+    color: #fff;
+}
+
+.title {
+    font: 52px 'Chivo', sans-serif;
+}
+
+
+.product-description {
+    font: 18px 'Chivo', sans-serif;
+}
+
