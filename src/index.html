@@ -14,8 +14,12 @@
     <div class="logo-container">
       <img class="logo" src="assets/desktop/logo.svg" alt="pod logo">
     </div>
-    <div class="background-image">
-      Pod background image
+    <div class="background-image-container">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="assets/desktop/image-host.jpg">
+        <source media="(min-width: 750px)" srcset="assets/tablet/image-host.jpg">
+        <img src="assets/mobile/image-host.jpg" alt="background image">
+      </picture>
     </div>
     <section>
       <div class="title">
@@ -31,10 +35,14 @@
         </form>
       </div>
       <div class="podcast-providers">
+        <img class="apple" src="assets/desktop/apple-podcast.svg" alt="apple">
+        <img class="google" src="assets/desktop/google-podcasts.svg" alt="google">
+        <img class="pocket-casts" src="assets/desktop/pocket-casts.svg" alt="pocket-casts">
+        <img class="spotify" src="assets/desktop/spotify.svg" alt="spotify">
       </div>
     </section>
     <div class="dots-footer">
-      Dots Footer
+      <img class="bg-pattern-dots" src="assets/desktop/bg-pattern-dots.svg" alt="background-pattern-dots">
     </div>
   </section>
 </body>
