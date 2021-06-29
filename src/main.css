@@ -13,12 +13,94 @@ body {
     color: #fff;
 }
 
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
 .title {
-    font: 52px 'Chivo', sans-serif;
+    font: 26px 'Chivo', sans-serif;
+    text-transform: uppercase;
+    color: var(--main-accent-color);
+}
+
+.title span {
+    color: var(--accent-copy);
 }
 
 
 .product-description {
-    font: 18px 'Chivo', sans-serif;
+    font: 15px 'Chivo', sans-serif;
+    padding: 20px 0;
+    color: var(--body-copy);
 }
 
+.page-container {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(18, 23, 37, 0.9), rgba(18, 23, 37, 0.9)),
+                      url('assets/mobile/image-host.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.background-image-container{
+    display: none;
+}
+
+.dots-footer {
+    display: none;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5%;
+    text-align: center;
+}
+
+.main-content .title .product-description {
+    order: 1;
+}
+
+.main-content .podcast-providers {
+    order: 2;
+}
+
+.main-content .form-container {
+    order: 3;
+}
+
+
+.access-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+@media only screen and (min-width:750px) {
+    .page-container {
+        background-image: none;
+    }
+
+    .title {
+        font: 52px 'Chivo', sans-serif;
+    }
+
+    .product-description {
+        font: 18px 'Chivo', sans-serif;
+    }
+
+    .background-image-container{
+        display: block;
+    }
+
+    .dots-footer {
+        display: block;
+    }
+}
