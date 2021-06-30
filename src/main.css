@@ -76,11 +76,69 @@ body {
     order: 3;
 }
 
+.main-content > div {
+    padding: 15px 0;
+}
 
 .access-form {
     display: flex;
     flex-direction: column;
     padding: 20px;
+}
+
+.access-form > input, button {
+    height: 48px;
+    border-radius: 35px;
+    border: none;
+    padding-left: 10px;
+    margin: 8px;
+}
+
+.access-form-input {
+    width: 327px;
+    background-color: var(--form-fill);
+    text-indent: 40px;
+}
+
+.access-form-button {
+    text-align: center;
+    background-color: var(--main-accent-color);
+    color: var(--main-bg-color);
+    font: bold 14px 'Chivo';
+}
+
+.podcast-providers {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 17px;
+    width: 315px;
+}
+
+.podcast-icon {
+    height: 90%;
+    width: 20%;
+}
+
+.spotify {
+    height: 17px;
+    width: 56px;
+}
+
+.apple {
+    height: 17px;
+    width: 45px;
+}
+
+.google {
+    height: 11px;
+    width: 73px;
+}
+
+.pocket {
+    height: 15px;
+    width: 77px;
 }
 
 @media only screen and (min-width:750px) {
