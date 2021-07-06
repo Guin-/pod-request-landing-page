@@ -5,12 +5,14 @@
     --form-fill: #2C344B;
     --accent-copy: #FFFFFF; /* everywhere, form label, pod logo text */
     --footer-list:#5A668A;
+    --form-button: #B3FFE2;
 }
 
 body {
     font-family: 'Chivo', sans-serif;
     background-color: var(--main-bg-color);
     color: #fff;
+    margin: 0;
 }
 
 .logo {
@@ -144,21 +146,122 @@ body {
 @media only screen and (min-width:750px) {
     .page-container {
         background-image: none;
+        display: block;
+        position: absolute;
+        width: 1275px;
+        height: 640px;
+        left: 165px;
+        top: 65px;
     }
 
-    .title {
+    .logo-container {
+        position: initial;
+        left: 165px;
+        top: 102px;
+        margin-bottom: -23px;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .background-image-container {
+        display: block;
+        position: sticky;
+        width: 888px;
+        height: 640px;
+        left: 552px;
+        top: 130px;
+        background-image: linear-gradient(rgba(179, 255, 226, 0.05), rgba(179, 255, 226, 0.05)),
+                            url('assets/desktop/image-host.jpg');
+    }
+
+    .main-content {
+        position: absolute;
+        width: 723px;
+        height: 509px;
+        left: 0px;
+        top: 190px;
+        display: block;
+        padding: 0;
+        text-align: left;
+        background-color: var(--main-bg-color);
+    }
+
+    .main-content .title {
+        padding-top: 88px;
+        width: 665px;
+        height: 124px;
         font: 52px 'Chivo', sans-serif;
+        line-height: 62px;
     }
 
     .product-description {
         font: 18px 'Chivo', sans-serif;
+        width: 445px;
+        height: 84px;
     }
 
-    .background-image-container{
-        display: block;
+    .access-form > input, button {
+        border-radius: 35px;
+        border: none;
+        margin: 0;
+        padding-left: 0;
+    }
+    .access-form {
+        background-color: var(--form-fill);
+        border-radius: 35px;
+        flex-direction: row;
+        padding: 0;
+        width: 427px;
+        height: 56px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .access-form-input {
+        height: 56px;
+        width: 100%;
+    }
+
+    .access-form-button {
+        height: 46px;
+        width: 200px;
+        margin-right: 5px;
+    }
+
+    .podcast-providers {
+        height: 29px;
+        width: 536px;
+        justify-content: space-between;
+    }
+
+    .spotify {
+        height: 29px;
+        width: 96px;
+    }
+
+    .apple {
+        height: 29px;
+        width: 78px;
+    }
+
+    .google {
+        height: 18px;
+        width: 125px;
+    }
+
+    .pocket {
+        height: 26px;
+        width: 129px;
     }
 
     .dots-footer {
         display: block;
+        position: absolute;
+        width: 232px;
+        height: 40px;
+        left: 1040px;
+        top: 625px;
     }
 }
