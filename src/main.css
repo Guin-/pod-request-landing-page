@@ -109,6 +109,12 @@ body {
     font: bold 14px 'Chivo';
 }
 
+.error-message {
+    color: #b84a42;
+    padding-left: 40px;
+    padding-top: 5px;
+}
+
 .podcast-providers {
     display: flex;
     flex-wrap: nowrap;
@@ -228,6 +234,10 @@ body {
         height: 46px;
         width: 200px;
         margin-right: 5px;
+    }
+
+    .access-form-button:hover {
+        background-color: var(--form-button);
     }
 
     .podcast-providers {
