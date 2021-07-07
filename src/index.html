@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet">
   <link href="main.css" rel="stylesheet">
+  <script defer src="validateForm.js"></script>
   <title>Frontend Mentor | Pod request access landing page</title>
 </head>
 <body>
@@ -33,9 +34,10 @@
       </div>
       <div class="form-container">
         <form action="" method="post" class='access-form'>
-          <input type="text" required class="access-form-input" placeholder="Email address">
+          <input type="email" required class="access-form-input" placeholder="Email address">
           <button type="submit" class="access-form-button">Request Access</button>
         </form>
+        <div hidden class="error-message">Oops! Please check your email</div>
       </div>
       <div class="podcast-providers">
         <img class="spotify podcast-icon" src="assets/desktop/spotify.svg" alt="spotify">
