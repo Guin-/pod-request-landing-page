@@ -24,6 +24,8 @@ body {
     font: 26px 'Chivo', sans-serif;
     text-transform: uppercase;
     color: var(--main-accent-color);
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .title span {
@@ -78,7 +80,7 @@ body {
     order: 3;
 }
 
-.main-content > div {
+.main-content > section, h1 {
     padding: 15px 0;
 }
 
@@ -149,22 +151,22 @@ body {
     width: 77px;
 }
 
-@media only screen and (min-width:750px) {
+
+@media only screen and (min-width: 750px) {
     .page-container {
         background-image: none;
         display: block;
         position: absolute;
-        width: 1275px;
-        height: 640px;
-        left: 165px;
-        top: 65px;
+        width: 768px;
+        height: 1024px;
     }
 
     .logo-container {
-        position: initial;
-        left: 165px;
-        top: 102px;
-        margin-bottom: -23px;
+        position: absolute;
+        left: 39px;
+        top: 50px;
+        width: 135px;
+        height: 56px;
     }
 
     .logo {
@@ -173,33 +175,34 @@ body {
 
     .background-image-container {
         display: block;
-        position: sticky;
-        width: 888px;
-        height: 640px;
-        left: 552px;
-        top: 130px;
+        position: absolute;
+        width: 491px;
+        height: 767px;
+        left: 277px;
+        top: 0px;
         background-image: linear-gradient(rgba(179, 255, 226, 0.05), rgba(179, 255, 226, 0.05)),
-                            url('assets/desktop/image-host.jpg');
+                            url('assets/tablet/image-host.jpg');
     }
 
     .main-content {
         position: absolute;
-        width: 723px;
-        height: 509px;
-        left: 0px;
-        top: 190px;
+        width: 635px;
+        height: 510px;
+        left: 39px;
+        top: 258px;
         display: block;
         padding: 0;
         text-align: left;
         background-color: var(--main-bg-color);
     }
 
+
     .main-content .title {
-        padding-top: 88px;
-        width: 665px;
-        height: 124px;
-        font: 52px 'Chivo', sans-serif;
-        line-height: 62px;
+        padding-top: 93px;
+        width: 635px;
+        height: 112px;
+        font: 48px 'Chivo', sans-serif;
+        line-height: 56px;
     }
 
     .product-description {
@@ -208,12 +211,6 @@ body {
         height: 84px;
     }
 
-    .access-form > input, button {
-        border-radius: 35px;
-        border: none;
-        margin: 0;
-        padding-left: 0;
-    }
     .access-form {
         background-color: var(--form-fill);
         border-radius: 35px;
@@ -225,22 +222,14 @@ body {
         align-items: center;
     }
 
-    .access-form-input {
-        height: 56px;
-        width: 100%;
-    }
-
     .access-form-button {
         height: 46px;
         width: 200px;
         margin-right: 5px;
     }
 
-    .access-form-button:hover {
-        background-color: var(--form-button);
-    }
-
     .podcast-providers {
+        margin-top: 30px;
         height: 29px;
         width: 536px;
         justify-content: space-between;
@@ -271,6 +260,76 @@ body {
         position: absolute;
         width: 232px;
         height: 40px;
+        left: 30px;
+        top: 920px;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .page-container {
+        width: 1275px;
+        height: 640px;
+        left: 165px;
+        top: 65px;
+    }
+
+    .logo-container {
+        position: static;
+        left: 165px;
+        top: 102px;
+        margin-bottom: -23px;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .background-image-container {
+        position: sticky;
+        width: 888px;
+        height: 640px;
+        left: 552px;
+        top: 130px;
+        background-image: linear-gradient(rgba(179, 255, 226, 0.05), rgba(179, 255, 226, 0.05)),
+                            url('assets/desktop/image-host.jpg');
+    }
+
+    .main-content {
+        width: 723px;
+        height: 509px;
+        left: 0px;
+        top: 190px;
+    }
+
+    .main-content .title {
+        padding-top: 88px;
+        width: 665px;
+        height: 124px;
+        font: 52px 'Chivo', sans-serif;
+        line-height: 62px;
+    }
+
+    .access-form > input, button {
+        border-radius: 35px;
+        border: none;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .access-form-input {
+        height: 56px;
+        width: 100%;
+    }
+
+    .access-form-button:hover {
+        background-color: var(--form-button);
+    }
+
+    .podcast-providers {
+        margin-top: 5px;
+    }
+
+    .dots-footer {
         left: 1040px;
         top: 625px;
     }
